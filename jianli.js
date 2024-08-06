@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         自动简历填写测试
+// @name         自动简历填写
 // @namespace    http://tampermonkey.net/
 // @version      2024-08-02
-// @description  try to take over the world!
+// @description  自动简历填写脚本，用于简历自动填写内容。
 // @author       Jdassd
 // @match        http://*/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
