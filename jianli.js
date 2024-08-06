@@ -25,7 +25,6 @@
     }
 
     async function sendData(url, entireHTML) {
-        // 要发送的数据
         const data = {
             html: entireHTML
         };
