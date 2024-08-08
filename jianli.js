@@ -11,13 +11,21 @@
 
 (function() {
     'use strict';
-    // 监听页面加载事件
-    window.onload = function() {
-        // 页面完全加载后执行此函数
-        const entireHTML = getEntireHTMLContent();
-        // fetchAndExecute('https://1255318900-923de4mtau-cd.scf.tencentcs.com/test/htmlGenerateJs', entireHTML);
-        fetchAndExecute('http://www.jdassd.top:9000/test/htmlGenerateJs', entireHTML);
-    };
+    // // 监听页面加载事件
+    // window.onload = function() {
+    //     // 页面完全加载后执行此函数
+    //     const entireHTML = getEntireHTMLContent();
+    //     // fetchAndExecute('https://1255318900-923de4mtau-cd.scf.tencentcs.com/test/htmlGenerateJs', entireHTML);
+    //     fetchAndExecute('http://www.jdassd.top:9000/test/htmlGenerateJs', entireHTML);
+    // };
+
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.altKey) { // 判断是否按下ctrl+alt
+            alert("即将进行页面上传分析过程，请确保正在简历填写页面，且页面已经加载完成");
+            const entireHTML = getEntireHTMLContent();
+            fetchAndExecute('http://www.jdassd.top:9000/test/htmlGenerateJs', entireHTML); // 执行function
+        }
+    });
 
     // 获取整个HTML内容的函数
     function getEntireHTMLContent() {
